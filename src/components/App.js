@@ -37,7 +37,7 @@ class App extends Component {
         finishDate: null
       }, {
         id: 4,
-        text: 'Nauczyć się React styled-components',
+        text: 'znaleźć pracę',
         date: '2019-08-20',
         important: false,
         active: true,
@@ -45,12 +45,40 @@ class App extends Component {
       }
     ]
   }
+
+  deleteTask = (id) => {
+
+    const tasks = [...this.state.tasks]
+    const index = tasks.findIndex(task => task.id === id)
+    tasks.splice(index, 1)
+
+    this.setState({
+      tasks
+    })
+
+  }
+
+  changeTaskStatus = (id) => {
+
+    const tasks = Array.from(this.state.tasks)
+    tasks.forEach(task => {
+      if (task.id === id) {
+        task.active = false;
+        task.finishDate = new Date().getTime();
+      }
+    })
+
+    this.setState({
+      tasks
+    })
+  }
+
   render() {
     return (
       <div className="App">
         TODO App
         <AddTask />
-        <TaskList tasks={this.state.tasks} />
+        <TaskList tasks={this.state.tasks} delete={this.deleteTask} change={this.changeTaskStatus} />
       </div>
     );
   }
