@@ -25,14 +25,14 @@ class App extends Component {
         id: 2,
         text: 'Nauczyć się Css',
         date: '2019-07-20',
-        important: true,
+        important: false,
         active: true,
         finishDate: null
       }, {
         id: 3,
         text: 'Nauczyć się JavaScript',
         date: '2019-07-25',
-        important: false,
+        important: true,
         active: true,
         finishDate: null
       }, {
