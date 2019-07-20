@@ -98,3 +98,87 @@
         opacity: 100;
   }
 }
+
+
+
+@media (max-width: 1050px) {
+
+    .wrapTask{
+        height: 80px;
+        width: 80%;
+        margin:0 auto;
+        animation-name: example;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        margin-bottom: 80px;
+        display: block;
+
+    }
+
+    
+.task{
+    background-color: white;
+    color: #1f1f1f;
+    margin-top: 4px;
+width: 94%;
+}
+
+.task span{
+    color: #727272;
+    font-size: 12px;
+    float: left;: left;
+    
+}
+.task strong{
+    width: 95%;
+    display: block;
+}
+
+
+.doneBtn {
+    background-image: linear-gradient(to right, #4adaa2, #4adaa2);
+    width: 50%;
+    height: 60%;
+    border:none;
+    color: #1f1f1f;
+    float: left;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.deleteBtn {
+    background-color: #4b4b4b;
+    color:#949494;
+    width: 50%;
+    height: 60%;
+    border:none;
+    margin: 0 auto;
+    margin-top: 10px;
+
+}
+
+
+.wrapTaskDone{
+    clear: both;
+    height: 90px;
+    width: 80%;
+    margin: 0 auto;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    margin-bottom: 70px;
+    display: block;
+}
+
+
+.taskDone{
+    display: block;
+    width: 95%;
+    background-color: rgb(119, 119, 119);;
+   color: #1f1f1f;
+    text-align: left;
+}
+
+    
+
+}

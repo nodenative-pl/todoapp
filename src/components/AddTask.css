@@ -9,7 +9,6 @@
     animation-name: bgColorChange;
     animation-duration: 1.5s;
     animation-iteration-count: 1;
-    
 }
 
 input {
@@ -78,3 +77,44 @@ input[type="date"], focus {
         height: 100px;
     }
   }
+
+
+  @media (max-width: 1050px) {
+
+    .form {
+        font-size: 13px;
+        width: 100%;
+        min-height: 180px;
+        background-color: white;
+        overflow: hidden;
+        animation-name: bgColorChange;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        flex-direction:column;
+    }
+    
+input {
+    font-size: 20px;
+ 
+}
+
+#addTask {
+    margin: 0 auto;
+    margin-top: 10px;
+    display: block;
+    width: 80%;
+
+
+}
+
+input[type="date"] {
+    min-width: 20%;
+    margin:0 auto;
+    margin-bottom: 0;
+
+}
+#addTaskButton{
+    display: block;
+    margin: 0 auto;
+}
+}
