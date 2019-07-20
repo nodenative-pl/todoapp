@@ -21,7 +21,9 @@ class AddTask extends Component {
     }
     handleClick = () => {
         const { text, date } = this.state;
-        if (text.length > 2) {
+
+
+        if (text.length > 2 && this.state.date >= this.minDate) {
             const add = this.props.add(text, date);
             if (add) {
                 this.setState({
@@ -29,7 +31,8 @@ class AddTask extends Component {
                     date: this.minDate
                 })
             }
-        } else alert('Zadanie zbyt krotkie')
+        } else alert('Zadanie powinno składac się minimum z 3 znaków, a data powinna odwoływać się do przyszłości')
+
     }
 
 
