@@ -14,7 +14,7 @@
   line-height: 20px;
 
     animation-name: example;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
     
 
@@ -23,7 +23,6 @@
   font-size: 16px;
   color: #176a4d
 }
-
 
 #top{
   display: block;

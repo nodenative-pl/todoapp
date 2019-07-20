@@ -1,11 +1,31 @@
 .wrapTask{
     display: block;
     height: 50px;
-    margin: 0 auto;
+
     width: 35%;
     padding-top: 10px;
     margin-top: 10px;
+    margin: 0 auto;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+
 }
+
+.wrapTaskDone{
+    display: block;
+    height: 50px;
+
+    width: 35%;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin: 0 auto;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+
+}
+
 
 
 .task{
@@ -19,6 +39,19 @@
     padding-left: 20px;
     padding-top: 12px;
 }
+
+.taskDone{
+    float: left;
+    display: inline-block;
+    width: 74%;
+    background-color: rgb(119, 119, 119);;
+   color: #1f1f1f;
+    height: 48px;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 2px;
+}
+
 .task span{
     float: right;
     margin-right: 20px;
@@ -66,3 +99,13 @@
     background-color:  #c4001d;
 }
 
+
+@keyframes example {
+    from {
+       opacity: 0;
+      
+    }
+    to {
+        opacity: 100;
+  }
+}

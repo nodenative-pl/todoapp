@@ -5,19 +5,76 @@
     margin: 0 auto;
     /* margin-top: 30px; */
     background-color: white;
+    overflow: hidden;
+    animation-name: bgColorChange;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    
 }
 
 input {
     margin: 20px;
     padding: 5px 10 px;
     font-size: 20px;
-    height: 50px;
+    height: 50px; 
 }
 #addTask{
     width: 30%;
-
     padding-left: 20px;
 }
 .form button {
     padding: 3px 10px;
 }
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+
+/* Removes the spin button */
+input[type="date"]::-webkit-inner-spin-button { 
+    display: none;
+}
+
+/* Always display the drop down caret */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #2c3e50;
+}
+
+/* A few custom styles for date inputs */
+input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 18px;
+    padding:5px; 
+    box-shadow: none;
+    border: 1px black;
+}
+
+input[type="date"], focus {
+    color: #95a5a6;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    outline: none;
+}
+
+#addTaskButton{
+    background-color: #c5c5c5;
+    border: none;
+    padding: 10px 20px;
+}
+#addTaskButton:hover{
+    background-color: #1f1f1f;
+    color: white;
+}
+
+
+
+@keyframes bgColorChange {
+    from {
+        height: 0px;
+    }
+    to {
+        height: 100px;
+    }
+  }

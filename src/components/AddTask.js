@@ -41,9 +41,9 @@ class AddTask extends Component {
         return (
             <div className="form">
                 <input id="addTask" type="text" placeholder="Wprowadź zadanie..." value={this.state.text} onChange={this.handleChange} />
-                <label htmlFor="date">Deadline</label>
+                <label htmlFor="date">Deadline:</label>
                 <input type="date" value={this.state.date} min={this.minDate} max={maxDate} onChange={this.handleDate} />
-                <button onClick={this.handleClick}>Dodaj</button>
+                <button id="addTaskButton" onClick={this.handleClick}>Dodaj</button>
             </div>
         );
     }

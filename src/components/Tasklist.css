@@ -1,3 +1,21 @@
-.done{
-   
-}
+  .active{
+      width: 100%;
+      min-height: 300px;
+  }
+  .active p {
+    letter-spacing: 8px;
+    color: #cacaca;
+  }
+
+  .done{
+       width: 100%;
+       min-height: 300px;
+       letter-spacing: 0px;
+  }
+
+  .done p {
+    letter-spacing: 8px;
+    color: #cacaca;
+  }
+
+  

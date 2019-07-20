@@ -15,13 +15,12 @@ const TaskList = props => {
     return (
         <>
             <div className="active">
-                <h2>ZADANIA DO WYKONANIA:</h2>
+                <p>ZADANIA DO WYKONANIA:</p>
                 {activeTasks.length > 0 ? activeTasks : <p>brak zadań do wykonania.</p>}
             </div>
             <div className="done">
-                <h2>WYKONANE ZADANIA: <em>({done.length})</em></h2>
-                {doneTasks.slice(0, 5)}
-                {/* show last 5 tasks */}
+                <p>WYKONANE ZADANIA: <em>({done.length})</em></p>
+                {doneTasks}
             </div>
         </>
     );

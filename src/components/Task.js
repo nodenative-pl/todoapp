@@ -19,13 +19,14 @@ const Task = (props) => {
 
         const finish = new Date(finishDate).toLocaleString()
         return (
-            <div>
-                <p>
-                    <strong>{text}</strong> - do <span>{date}</span>
-                    <br />
-                    Potwierdzenie wykonania: <span>{finish}</span>
-                    <button onClick={() => props.delete(id)}>Usuń</button>
-                </p>
+            <div className="wrapTaskDone">
+
+                <div className="taskDone" ><strong>{text}</strong> - do <span>{date}</span>
+                    <br></br>Potwierdzenie wykonania: <span>{finish}</span>
+                </div>
+                <button className="deleteBtn" onClick={() => props.delete(id)}>Usuń</button>
+
+
             </div>
         );
     }
