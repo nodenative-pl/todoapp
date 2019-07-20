@@ -1,48 +1,41 @@
 .wrapTask{
-    display: block;
     height: 50px;
-
-    width: 35%;
-    padding-top: 10px;
-    margin-top: 10px;
-    margin: 0 auto;
+    width: 45%;
+    margin:0 auto;
+    margin-top: 5px;
     animation-name: example;
     animation-duration: 2s;
     animation-iteration-count: 1;
-
+    display: flex;
 }
 
 .wrapTaskDone{
-    display: block;
     height: 50px;
-
-    width: 35%;
-    padding-top: 10px;
-    margin-top: 10px;
-    margin: 0 auto;
+    width: 45%;
+    margin:0 auto;
+    margin-top: 5px;
     animation-name: example;
     animation-duration: 2s;
     animation-iteration-count: 1;
-
+    display: flex;
 }
 
 
 
 .task{
-    float: left;
-    display: inline-block;
-    width: 74%;
+    height: 75%;
+    width: 75%;
     background-color: white;
-   color: #1f1f1f;
-    height: 38px;
+    color: #1f1f1f;
     text-align: left;
     padding-left: 20px;
+    float: left;
     padding-top: 12px;
 }
 
 .taskDone{
+    display: block;
     float: left;
-    display: inline-block;
     width: 74%;
     background-color: rgb(119, 119, 119);;
    color: #1f1f1f;
@@ -54,21 +47,19 @@
 
 .task span{
     float: right;
-    margin-right: 20px;
+    margin-right: 18px;
     color: #727272;
     font-size: 14px;
 }
 
 .doneBtn {
     margin-left: 5px;
-    float: left;
     /* background-color: #4bdaa2; */
     background-image: linear-gradient(to right, #4adaa2, #4adaa2);
-    width: 70px;
-    height: 50px;
+    width: 75px;
+    height: 100%;
     border:none;
     color: #1f1f1f;
-
 }
 
 .doneBtn:hover{
@@ -85,10 +76,8 @@
     background-color: #4b4b4b;
     color:#949494;
     margin-left: 5px;
-    float: left;
-
-    width: 70px;
-    height: 50px;;
+    width: 75px;
+    height: 100%;
     border:none;
 }
 

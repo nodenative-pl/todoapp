@@ -9,7 +9,7 @@ const Task = (props) => {
     if (active) {
         return (
             <div className="wrapTask">
-                <div className="task" ><strong>{text}</strong> <span>do: {date}</span></div>
+                <div className="task"><strong>{text}</strong> <span>do: {date}</span></div>
                 <button className="doneBtn" onClick={() => props.change(id)}>Zakończ</button>
                 <button className="deleteBtn" onClick={() => props.delete(id)}>Usuń</button>
             </div >
