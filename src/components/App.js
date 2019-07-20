@@ -37,7 +37,7 @@ class App extends Component {
         finishDate: null
       }, {
         id: 4,
-        text: 'znaleźć pracę',
+        text: 'Znaleźć pracę',
         date: '2019-08-20',
         important: false,
         active: true,
@@ -76,10 +76,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        TODO App
+        <div id="top"><div id="logo"><strong>TODO APP</strong><br /><span>BY MATEUSZ PASICH</span></div></div>
         <AddTask />
         <TaskList tasks={this.state.tasks} delete={this.deleteTask} change={this.changeTaskStatus} />
-      </div>
+      </div >
     );
   }
 }

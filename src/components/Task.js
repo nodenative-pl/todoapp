@@ -1,8 +1,7 @@
 import React from 'react';
+import './Task.css';
 
 const Task = (props) => {
-
-
 
     const style = {
         color: 'red',
@@ -13,13 +12,11 @@ const Task = (props) => {
 
     if (active) {
         return (
-            <div>
-                <p>
-                    <strong style={important ? style : null}>{text}</strong> - do <span>{date}</span>
-                    <button onClick={() => props.change(id)}>Zrobione</button>
-                    <button onClick={() => props.delete(id)}>Usuń</button>
-                </p>
-            </div>
+            <div className="wrapTask">
+                <div className="task" ><strong style={important ? style : null}>{text}</strong> <span>do: {date}</span></div>
+                <button className="doneBtn" onClick={() => props.change(id)}>Zrobione</button>
+                <button className="deleteBtn" onClick={() => props.delete(id)}>Usuń</button>
+            </div >
         );
     }
     else {
