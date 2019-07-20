@@ -1,5 +1,6 @@
 import React from 'react';
 import Task from './Task'
+import './Tasklist.css'
 
 const TaskList = props => {
 
@@ -14,12 +15,11 @@ const TaskList = props => {
     return (
         <>
             <div className="active">
-                <h2>Zadania do zrobienia: </h2>
+                <h2>ZADANIA DO WYKONANIA:</h2>
                 {activeTasks.length > 0 ? activeTasks : <p>brak zadań do wykonania.</p>}
             </div>
-            <hr />
             <div className="done">
-                <h2>Zadania zrobione: <em>({done.length})</em></h2>
+                <h2>WYKONANE ZADANIA: <em>({done.length})</em></h2>
                 {doneTasks.slice(0, 5)}
                 {/* show last 5 tasks */}
             </div>

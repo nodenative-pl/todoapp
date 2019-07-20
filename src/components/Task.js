@@ -3,18 +3,14 @@ import './Task.css';
 
 const Task = (props) => {
 
-    const style = {
-        color: 'red',
-    }
 
-
-    const { text, date, id, active, important, finishDate } = props.task;
+    const { text, date, id, active, finishDate } = props.task;
 
     if (active) {
         return (
             <div className="wrapTask">
-                <div className="task" ><strong style={important ? style : null}>{text}</strong> <span>do: {date}</span></div>
-                <button className="doneBtn" onClick={() => props.change(id)}>Zrobione</button>
+                <div className="task" ><strong>{text}</strong> <span>do: {date}</span></div>
+                <button className="doneBtn" onClick={() => props.change(id)}>Zakończ</button>
                 <button className="deleteBtn" onClick={() => props.delete(id)}>Usuń</button>
             </div >
         );
