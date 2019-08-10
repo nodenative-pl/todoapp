@@ -1,1 +1,1 @@
-Please view deployment at Environment tab. Enjoy! :)
+Please view deployment at https://dereypl.github.io/todoapp/
