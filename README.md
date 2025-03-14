@@ -1,1 +1,1 @@
-Please view deployment at https://dereypl.github.io/todoapp/
+Please view deployment at https://nodenative-pl.github.io/todoapp/
